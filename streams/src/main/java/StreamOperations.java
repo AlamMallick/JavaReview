@@ -28,6 +28,22 @@ public class StreamOperations {
         myList.stream().filter(p->p%2==0).map(i->i+1)
                 .forEach(System.out::println);
 
+        System.out.println("------------------------------------------------------");
+        List<String> words = Arrays.asList("Java","Apple","Honda","Developer");
+        for (String each:words
+             ) {
+            System.out.println(each.length()+":");
+        }
+        words.stream().map(String::length).forEach(System.out::println);
+
+        System.out.println("------------------------------------------------------");
+
+
+
+
+
+
+
 
     }
 }
